@@ -1,0 +1,32 @@
+.CardContainer{
+   cursor: pointer;
+}
+
+.CardImg {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin:auto;
+}
+
+.Image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.titleTag{
+margin-left:40%;
+/* font-size: 15px; */
+}
+
+.activeCategory {
+    color: green; 
+}
+
+.offlineCategory {
+    color: red; 
+}

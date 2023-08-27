@@ -1,0 +1,14 @@
+.detail_card_img {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    border: 1px solid #ccc;
+    margin-top: 100px;
+    margin-left:130px ;
+    }      
+
+.detail_page{
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+}

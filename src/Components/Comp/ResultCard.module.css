@@ -1,0 +1,10 @@
+.params_card{
+width: 200px;
+height: 150px;
+margin: 50px;
+/* border:2px solid green; */
+background-color: rgb(77, 75, 70);
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(201, 201, 210, 0.64), 0 8px 16px rgba(193, 202, 193, 0.34);
+text-align: center;
+}

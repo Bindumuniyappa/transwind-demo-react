@@ -1,0 +1,42 @@
+.Big_CardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 300px;
+}
+
+.CardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Decrease the gap between cards */
+    max-width: 1000px; /* Reduce the maximum width */
+    padding: 20px;
+    justify-content: center; /* Center cards horizontally */
+    box-shadow: 0 2px 4px rgba(144, 144, 150, 0.64), 0 8px 16px rgba(188, 209, 188, 0.34);
+  }
+  
+  .Card {
+    flex: 1;
+    min-width: 250px; /* Set a minimum card width */
+    max-width: calc(50% - 10px); /* 50% width for 2 cards per row */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+
+.Card:hover {
+    transform: translateY(-5px);
+}
+
+.active {
+  background-color: green; /* Customize the styling as needed */
+}
+
+/* Styling for offline category */
+.offline {
+  background-color: red; /* Customize the styling as needed */
+}
