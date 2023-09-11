@@ -47,12 +47,12 @@
     margin-left: 1rem;
   }
   
-  .nav-item {
+  .nav-items {
     line-height: 40px;
     margin-right: 1rem;
   }
   
-  .nav-item:after {
+  .nav-items:after {
     content: "";
     display: block;
     height: 3px;
@@ -61,12 +61,12 @@
     transition: width 0.7s ease, background-color 0.5s ease;
   }
   
-  .nav-item:hover:after {
+  .nav-items:hover:after {
     width: 100%;
     background: #ffdd40;
   }
   
-  .nav-item .active {
+  .nav-items .active {
     color: #ffdd40;
     border: 1px solid #ffdd40;
   }
@@ -75,7 +75,7 @@
     display: none;
   }
   
-  .btn{
+  .btns{
     width: 5rem;
     height: 2rem;
     border-radius: 5px;
@@ -104,7 +104,7 @@
       transition: all 0.5s ease;
       z-index: 1;
     }
-    .nav-item .active {
+    .nav-items .active {
       color: #ffdd40;
       border: none;
     }

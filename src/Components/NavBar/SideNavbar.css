@@ -1,26 +1,40 @@
 .Profile_sidebar {
-  position:fixed;
+  position: fixed;
   left: 0;
   top: 0;
-  width: 250px;
+  width: 200px;
   height: 100vh;
   background-color: #342f2f;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav_sidebar {
   margin-top: 100px;
   list-style-type: none;
   padding: 0;
+  display: flex;
 }
 
-.nav_sidebar li {
+.nav-menu {
+  flex-direction: column;
+}
+
+.nav-items {
   padding: 10px;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
-.nav_sidebar li:hover {
+.nav-items:hover {
   background-color: #beafaf;
   text-decoration: none;
+}
+
+.nav-links {
+  text-decoration: none;
+}
+
+.nav-links .active {
+  font-weight: bold; 
 }

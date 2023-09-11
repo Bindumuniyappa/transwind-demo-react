@@ -2,8 +2,8 @@
     width: 400px;
     height: 400px;
     display: flex;
-    border: 1px solid #ccc;
-    margin-top: 100px;
+    /* border: 1px solid #ccc; */
+    margin-top: 60px;
     margin-left:130px ;
     }      
 
@@ -12,3 +12,19 @@
     max-height: 50%;
     display: block;
 }
+
+.btn_resultPage{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: rgb(143, 167, 164);
+    border: 1px solid teal;
+    color:black;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+}
+

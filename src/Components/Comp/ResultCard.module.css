@@ -1,10 +1,42 @@
-.params_card{
-width: 200px;
+/* .params_card{
 height: 150px;
 margin: 50px;
-/* border:2px solid green; */
+border:2px solid green;
 background-color: rgb(77, 75, 70);
 border-radius: 5px;
 box-shadow: 0 2px 4px rgba(201, 201, 210, 0.64), 0 8px 16px rgba(193, 202, 193, 0.34);
 text-align: center;
-}
+} */
+
+/* ResultCard.module.css */
+.params_card {
+  width: 250px;
+  height: 150px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    margin-bottom: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .params_card:hover {
+    transform: scale(1.05);
+  }
+  
+  .params_card > div {
+    text-align: center;
+  }
+  
+  .params_card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  
+  .params_card h4 {
+    font-size: 1rem;
+    color: #666;
+  }
+  

@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Buffer } from 'buffer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 if (!window.Buffer) {
   window.Buffer = Buffer;
 }
