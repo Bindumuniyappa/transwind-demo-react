@@ -1,4 +1,4 @@
 [[redirects]]
-from="/*"
-to="/index.html"
+from="/profile"
+to="/resultpage"
 status=200
