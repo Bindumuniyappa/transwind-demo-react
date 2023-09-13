@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styles from "../Comp/ResultCard.module.css";
-import mqtt from 'mqtt';
+
 
 const ResultCard = ({ field, value }) => {
 

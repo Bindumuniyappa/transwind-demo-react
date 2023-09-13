@@ -37,12 +37,12 @@ const DetailsPage = () => {
             const parsedPayload = JSON.parse(cleanedJsonString.toString());
             console.log(parsedPayload)
             setDeviceData(parsedPayload);
-        });
+        },)
 
         return () => {
         };
 
-    }, []);
+    }, [client]);
 
     const itemsPerPage = 4;
 
