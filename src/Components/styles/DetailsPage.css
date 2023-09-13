@@ -2,9 +2,9 @@
     /* width: 700px; */
     /* height: 600px; */
     /* border:2px solid red; */
-    box-shadow: 0 2px 4px rgba(144, 144, 150, 0.64), 0 8px 16px rgba(188, 209, 188, 0.34);
-    margin-left:800px;
-    margin-top: -400px;
+    /* box-shadow: 0 2px 4px rgba(144, 144, 150, 0.64), 0 8px 16px rgba(188, 209, 188, 0.34); */
+    margin-left:890px;
+    margin-top: 80px;
 }
 
   .no_data{
@@ -14,13 +14,11 @@
     font-weight: 900;
   }
 
-  .custom-card {
+  .card {
+    width: 700px;
     background-color: black;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .red{
-    background-color: gold;
+    box-shadow: 0 2px 4px rgba(144, 144, 150, 0.64), 0 8px 16px rgba(188, 209, 188, 0.34);
+    /* box-shadow: 0 4px 6px rgba(230, 225, 225, 0.1); */
   }
 
   .nav-pills > li.active{
@@ -29,9 +27,22 @@
 
   .card-body{
     height: 600px;
+
+  }
+  
+  /* .container{
+    width: 60%;
+    height: 60%;
+  } */
+
+  .active{
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 20px;
   }
 
-  .container{
-    width: 70%;
-    height: 70%;
+  .nav{
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 20px;
   }

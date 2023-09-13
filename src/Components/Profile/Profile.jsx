@@ -10,7 +10,7 @@ const Dashboard = () => {
     const navigate=useNavigate();
 
     const handleCardClick = (product) => {
-        navigate("/resultpage", { state: { title: product.title, image: product.image } });
+        navigate("/resultpage", { state: { title: product.title, image: product.image ,category:product.category} });
       };
 
     return (

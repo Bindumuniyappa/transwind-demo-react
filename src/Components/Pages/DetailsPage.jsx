@@ -6,6 +6,7 @@ import mqtt from 'mqtt';
 
 const DetailsPage = () => {
     const [deviceData, setDeviceData] = useState(""); // Using state to manage data
+    const [activePage, setActivePage] = useState(1);
     const initialConnectionOptions = {
         protocol: 'ws',
         host: 'broker.emqx.io',
@@ -58,17 +59,34 @@ const DetailsPage = () => {
     return (
         <>
             <div className="Big_container_page">
-                <div className=" container">
-                    <div className=" card custom-card row">
+                {/* <div className=" container"> */}
+                    <div className=" card custom-card ">
                     <div className="card-header bg-dark">
-                        <ul className='nav nav-pills nav-justified m-3' id="pills-tab" role="tablist">
+                    <ul className='nav nav-pills nav-justified m-3' id="pills-tab" role="tablist">
+                       {Array.from({ length: totalPages }, (_, index) => (
+                         <li
+                           key={index}
+                            onClick={() => {
+                            handlePageChange(index + 1);
+                             setActivePage(index + 1); 
+                             }}
+                         className={`nav-item ${activePage === index + 1 ? 'active' : ''}`} // Add 'active' class if the page is active
+                       role="presentation"
+                        >
+                       <a className="nav-link" data-bs-toggle="tab" data-bs-target={`#page${index + 1}`}>
+                      Page {index + 1}
+                     </a>
+                    </li>
+                   ))}
+                 </ul>
+                        {/* <ul className='nav nav-pills nav-justified m-3' id="pills-tab" role="tablist">
 
                             {Array.from({ length: totalPages }, (_, index) => (
                                 <li key={index} onClick={() => handlePageChange(index + 1)} className="nav-item  " role="presentation">
                                     <a className="nav-link active " data-toggle="tab" data-target="#page1">Page{index + 1}</a>
                                 </li>
                             ))}
-                        </ul>
+                        </ul> */}
                     </div>
                     <div style={{ display: "flex",flexDirection:"wrap" }} className={Object.entries(deviceData).length === 0 ? "no_data card-body" : ''}>
                         {Object.entries(deviceData).length === 0 ? (
@@ -82,7 +100,7 @@ const DetailsPage = () => {
                         )}
                     </div>
                 </div>
-                </div>
+                {/* </div> */}
             </div>
         </>
     )
