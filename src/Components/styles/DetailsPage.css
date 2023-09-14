@@ -4,7 +4,7 @@
     /* border:2px solid red; */
     /* box-shadow: 0 2px 4px rgba(144, 144, 150, 0.64), 0 8px 16px rgba(188, 209, 188, 0.34); */
     margin-left:890px;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
   .no_data{
@@ -24,10 +24,9 @@
   .nav-pills > li.active{
     background-color: gold;
   }
-
+  
   .card-body{
-    height: 600px;
-
+    height: 500px;
   }
   
   /* .container{
