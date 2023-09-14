@@ -16,7 +16,7 @@ const Login = () => {
 
   React.useEffect(() => {
     if (localStorage.getItem('auth')) {
-      navigate('/profile'); // Replaced history.push('/')
+      navigate('/profile'); 
     }
   }, []);
 
@@ -34,8 +34,9 @@ const Login = () => {
       return setErrorMessage('Invalid email or password');
     }
 
-    navigate('/profile'); // Replaced history.push('/')
+    navigate('/profile');
     localStorage.setItem('auth', true);
+    window.alert('You have successfully logged in!');
   };
 
   return (
