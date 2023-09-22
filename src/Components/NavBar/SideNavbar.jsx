@@ -22,9 +22,9 @@ const SideNavbar = () => {
           {navItems.map((item, index) => (
             <li className='nav-items' key={index}>
               <NavLink
-                exact
+                exact="true"
                 to={item.to}
-                activeClassName="active"
+                activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}
               >

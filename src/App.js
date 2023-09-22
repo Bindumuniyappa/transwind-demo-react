@@ -3,7 +3,7 @@ import {Routes,Route} from "react-router-dom";
 import Profile from "./Components/Profile/Profile";
 import { About } from "./Components/Pages/About";
 import { Contact } from "./Components/Pages/Contact";
-import { Report } from "./Components/Pages/Report";
+import  Report from "./Components/Pages/Report";
 import ResultPage from "./Components/Pages/ResultPage";
 import React from "react";
 // import mqtt from 'mqtt';
@@ -23,5 +23,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
