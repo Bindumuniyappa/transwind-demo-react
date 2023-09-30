@@ -21,8 +21,8 @@ function NavBar() {
     setLogout(true);
   };
 
-
   const handleClick = () => setClick(!click);
+
   return (
     <>
       <nav className="navbar">
