@@ -8,7 +8,7 @@ const DetailsPage = () => {
     const [deviceData, setDeviceData] = useState(""); // Using state to manage data
     const [activePage, setActivePage] = useState(1);
     const initialConnectionOptions = {
-        protocol: 'wss',
+        protocol: 'ws',
         host: 'broker.emqx.io',
         clientId: 'emqx_react_' + Math.random().toString(16).substring(2, 8),
         port: 8083,

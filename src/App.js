@@ -6,6 +6,7 @@ import { Contact } from "./Components/Pages/Contact";
 import  Report from "./Components/Pages/Report";
 import ResultPage from "./Components/Pages/ResultPage";
 import React from "react";
+import AdminPage from "./Components/Pages/AdminPage";
 // import mqtt from 'mqtt';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path="/report" element={<Report />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/resultpage" element={<ResultPage />} />
+      <Route path="/adminpage" element={<AdminPage/>} />
     </Routes>
     </div>
   );

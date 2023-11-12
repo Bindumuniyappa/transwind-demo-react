@@ -15,6 +15,7 @@ const Dashboard = () => {
         navigate("/resultpage", { state: { title: product.title, image: product.image ,category:product.category} });
       };
 
+      
     return (
         <>
             <Navbar />
